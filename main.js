@@ -3,8 +3,8 @@ var exphbs  = require('express-handlebars');
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
+app.engine('html', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'html');
 
 //URLs
 
